@@ -5,105 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utils.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <title>iBlog</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav-left">
-        <span class="poppins-semibold">
-          <!-- <img class="logo" src="./img/logo_1.png" alt="" /> -->
-          iBlog
-        </span>
+    <script src="js/script.js"></script>
+
+    <div class="main" id="blur">
+      <nav class="navbar">
+        <div class="nav-left">
+          <span class="poppins-semibold">
+            <!-- <img class="logo" src="./img/logo_1.png" alt="" /> -->
+            iNotes
+          </span>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="nav-right">
+          <input
+            type="text"
+            name="search-bar"
+            id=""
+            class="search-bar poppins-medium"
+            placeholder="Search Notes"
+          />
+          <button type="submit" class="search-btn">Search</button>
+  
+  
+          <!-- <form action="" class="search-form">
+            <input type="text" placeholder="Type to search" class="search-input" />
+    
+            <div class="search-button">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <i class="fa-solid fa-xmark search-close"></i>
+            </div>
+          </form> -->
+  
+  
+        </div>
+      </nav>
+      <!-- <img class="banner" src="./img/banner.jpg" alt=""> -->
+  
+      <!-- <div class="blog-list">
+        <h2>Latest Blogs</h2>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <div class="blog">
+              <p class="blog-header">
+                <a href="blog1.html">Blog Title 1</a>
+              </p>
+              <p class="blog-content">Short description of blog content
+              </p>
+            </div>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <div class="blog">
+              <p class="blog-header">
+                <a href="blog2.html">Blog Title 2</a>
+              </p>
+              <p class="blog-content">Short description of the blog content...</p>
+            </div>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <div class="blog">
+              <p class="blog-header">
+                <a href="blog3.html">Blog Title 3</a>
+              </p>
+              <p class="blog-content">Short description of the blog content...</p>
+            </div>
           </li>
-        </ul>
+      </ul>
+      </div>  -->
+      <div class="heading-and-arrow">
+        <h2 id="heading-before-blog-cards">Latest Notes</h2>
+        <!-- <img src="./img/dotted-arrow.svg" class="dotted-arrrow" width="10vw" alt=""> -->
       </div>
+      <div class="container">
+          <div class="card__container">
+             <article class="card__article">
+                <img src="./img/landscape-1.png" alt="image" class="card__img">
+  
+                <div class="card__data">
+                   <span class="card__description">Vancouver Mountains, Canada</span>
+                   <h2 class="card__title">The Great Path</h2>
+                   <a href="#" class="card__button" onclick="toggleBlur()">Read More</a>
+                </div>
+             </article>
+  
+             <article class="card__article">
+                <img src="./img/landscape-2.png" alt="image" class="card__img">
+  
+                <div class="card__data">
+                   <span class="card__description">Poon Hill, Nepal</span>
+                   <h2 class="card__title">Starry Night</h2>
+                   <a href="#" class="card__button" onclick="toggleBlur()">Read More</a>
+                </div>
+             </article>
+  
+             <article class="card__article">
+                <img src="./img/landscape-3.png" alt="image" class="card__img">
+  
+                <div class="card__data">
+                   <span class="card__description">Bojcin Forest, Serbia</span>
+                   <h2 class="card__title">Path Of Peace</h2>
+                   <a href="#" class="card__button" onclick="toggleBlur()">Read More</a>
+                </div>
+             </article>
 
-      <div class="nav-right">
-        <input
-          type="text"
-          name="search-bar"
-          id=""
-          class="search-bar poppins-medium"
-          placeholder="Search Blogs"
-        />
-        <button type="submit" class="search-btn">Search</button>
+  
+          </div>
+       </div>
+    </div>
+    
+    
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="toggleBlur()">&times;</span>
+        <h1>Blog Title</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates non praesentium dicta asperiores sint vero. Tenetur, esse. Velit quod dolores perspiciatis, cupiditate suscipit eum exercitationem ratione ex incidunt architecto eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis debitis animi non neque veniam maxime ducimus tempora, fugit minima. Dolore nihil nostrum commodi voluptatem perferendis officiis blanditiis aperiam, provident quisquam.
+        Officia eos placeat neque molestiae nemo beatae, ad odio harum iusto. Omnis dolor nesciunt iure quo ea earum eveniet pariatur ex qui explicabo eos architecto, assumenda laudantium neque aut possimus!
+        Nostrum iste consequuntur natus tempore! Voluptates, ducimus facilis. Doloribus delectus molestias similique, laborum eos, inventore nesciunt doloremque incidunt quod dicta modi tempora impedit qui tenetur itaque autem excepturi iste facilis.
+        Consectetur maxime tempora magni veniam vero saepe labore molestiae corporis similique quibusdam, tenetur consequatur laboriosam voluptatibus suscipit autem deleniti sunt omnis placeat aliquid officia. Voluptates tempora ipsa ad fugit possimus?
+        Necessitatibus fugiat blanditiis sunt sed, nihil harum voluptas, sapiente at minus id cumque architecto, voluptatum aperiam? Dignissimos voluptates adipisci aliquid velit expedita, labore, esse dolorum pariatur fuga, aspernatur enim magnam!</p>
       </div>
-    </nav>
-    <!-- <img class="banner" src="./img/banner.jpg" alt=""> -->
-
-    <!-- <div class="blog-list">
-      <h2>Latest Blogs</h2>
-      <ul>
-        <li>
-          <div class="blog">
-            <p class="blog-header">
-              <a href="blog1.html">Blog Title 1</a>
-            </p>
-            <p class="blog-content">Short description of blog content
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="blog">
-            <p class="blog-header">
-              <a href="blog2.html">Blog Title 2</a>
-            </p>
-            <p class="blog-content">Short description of the blog content...</p>
-          </div>
-        </li>
-        <li>
-          <div class="blog">
-            <p class="blog-header">
-              <a href="blog3.html">Blog Title 3</a>
-            </p>
-            <p class="blog-content">Short description of the blog content...</p>
-          </div>
-        </li>
-    </ul>
-    </div>  -->
-
-    <div class="container">
-        <div class="card__container">
-           <article class="card__article">
-              <img src="./img/landscape-1.png" alt="image" class="card__img">
-
-              <div class="card__data">
-                 <span class="card__description">Vancouver Mountains, Canada</span>
-                 <h2 class="card__title">The Great Path</h2>
-                 <a href="#" class="card__button">Read More</a>
-              </div>
-           </article>
-
-           <article class="card__article">
-              <img src="./img/landscape-2.png" alt="image" class="card__img">
-
-              <div class="card__data">
-                 <span class="card__description">Poon Hill, Nepal</span>
-                 <h2 class="card__title">Starry Night</h2>
-                 <a href="#" class="card__button">Read More</a>
-              </div>
-           </article>
-
-           <article class="card__article">
-              <img src="./img/landscape-3.png" alt="image" class="card__img">
-
-              <div class="card__data">
-                 <span class="card__description">Bojcin Forest, Serbia</span>
-                 <h2 class="card__title">Path Of Peace</h2>
-                 <a href="#" class="card__button">Read More</a>
-              </div>
-           </article>
-        </div>
-     </div>
+    </div>
 
   </body>
 </html>
