@@ -17,11 +17,21 @@ const toggleSearch = () => {
 };
 
 function toggleBlur() {
-  const main = document.querySelector(".main");
+  const main = document.querySelector(".bg-wrap");
   main.classList.toggle("active-blur");
   const modal = document.querySelector(".modal");
   modal.classList.toggle("active-modal");
 }
+
+function addNote(){
+  toggleBlur();
+  const note = document.querySelector(".note-modal");
+  const noteInput = document.querySelector(".note-input");
+  const noteText = noteInput.value;
+  note.innerHTML = noteText;
+  noteInput.value = "";
+}
+
 toggleSearch();
 
 toggleBlur();

@@ -4,7 +4,8 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  /* background-image: url('../img/banner.jpg'); */
+  /* background-image: url('../img/bg.jpg'); */
+  background-blend-mode: color-dodge;
   background-color: var(--body-color);
   width: 100%;
   background-size: cover;
@@ -16,11 +17,28 @@ body {
   object-fit: cover;
 }
 
+
+.bg-wrap {
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.bg {
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+
 .main {
   transition: 0.5s;
 }
 
-.main#blur.active-blur {
+.bg-wrap#blur.active-blur {
   filter: blur(20px);
 }
 
@@ -50,6 +68,22 @@ body {
   font-size: 16px;
 
 } */
+
+
+.nav-center{
+  margin-right: 90px;
+}
+
+.create-note-btn{
+  padding: 9px 11px;
+  background: var(--body-color);
+  color: black;
+  border: none;
+  border: 1.6px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
 
 nav ul {
   display: flex;
@@ -85,7 +119,7 @@ nav ul li::before {
 }
 
 nav ul li:hover::before {
-  color: #059669;
+  color: black;
   transform: scaleX(1);
   transform-origin: left;
 }
@@ -112,9 +146,10 @@ nav ul li:hover {
 
 .search-bar::placeholder {
   color: black;
+  text-align: center;
 }
 .search-btn {
-  padding: 9px 18px;
+  padding: 9px 11px;
   background: var(--body-color);
   color: black;
   border: none;
@@ -272,14 +307,14 @@ nav ul li:hover {
   font-size: 4rem;
   /* margin: auto; */
   position: absolute;
-  top: 1%;
+  top: 10%;
   left: 61%;
 }
 
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(82, 60%, 28%);
+  --first-color: hsl(0, 0%, 0%);
   --title-color: hsl(0, 0%, 15%);
   --text-color: hsl(0, 0%, 35%);
   --body-color: hsl(0, 0%, 95%);
@@ -347,6 +382,7 @@ img {
   margin-inline: auto;
   opacity: 0;
   transition: opacity 1s 1s;
+  background-color: var(--secondary-color);
 }
 
 .card__description {
@@ -363,6 +399,9 @@ img {
 }
 
 .card__button {
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 50px;
   text-decoration: none;
   font-size: var(--small-font-size);
   font-weight: 500;
@@ -410,6 +449,8 @@ img {
     transform: translateX(25vw);
   }
 }
+
+
 @keyframes show-data {
   50% {
     transform: translateY(-10rem);

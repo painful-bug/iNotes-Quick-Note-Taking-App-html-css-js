@@ -16,124 +16,131 @@
   </head>
   <body>
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/cd69236243.js" crossorigin="anonymous"></script>
+    <div class="bg-wrap" id="blur">
+      <img src="./img/bg.jpg" class="bg" alt="">
 
-    <div class="main" id="blur">
-      <nav class="navbar">
-        <div class="nav-left">
-          <span class="poppins-semibold">
-            <!-- <img class="logo" src="./img/logo_1.png" alt="" /> -->
-            iNotes
-          </span>
+      <div class="main blog-content" >
+        <nav class="navbar">
+          <div class="nav-left">
+            <span class="poppins-semibold">
+              <!-- <img class="logo" src="./img/logo_1.png" alt="" /> -->
+              iNotes
+            </span>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="nav-center">
+            <button type="submit" class="create-note-btn" onclick="addNote()"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="nav-right">
+            <input
+              type="text"
+              name="search-bar"
+              id=""
+              class="search-bar poppins-medium"
+              placeholder="Search Notes"
+            />
+            <button type="submit" class="search-btn"><i class="fa-brands fa-searchengin"></i></button>
+    
+    
+            <!-- <form action="" class="search-form">
+              <input type="text" placeholder="Type to search" class="search-input" />
+      
+              <div class="search-button">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <i class="fa-solid fa-xmark search-close"></i>
+              </div>
+            </form> -->
+    
+    
+          </div>
+        </nav>
+        <!-- <img class="banner" src="./img/banner.jpg" alt=""> -->
+    
+        <!-- <div class="blog-list">
+          <h2>Latest Blogs</h2>
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <div class="blog">
+                <p class="blog-header">
+                  <a href="blog1.html">Blog Title 1</a>
+                </p>
+                <p class="blog-content">Short description of blog content
+                </p>
+              </div>
             </li>
             <li>
-              <a href="about.html">About</a>
+              <div class="blog">
+                <p class="blog-header">
+                  <a href="blog2.html">Blog Title 2</a>
+                </p>
+                <p class="blog-content">Short description of the blog content...</p>
+              </div>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <div class="blog">
+                <p class="blog-header">
+                  <a href="blog3.html">Blog Title 3</a>
+                </p>
+                <p class="blog-content">Short description of the blog content...</p>
+              </div>
             </li>
-          </ul>
+        </ul>
+        </div>  -->
+        <div class="heading-and-arrow">
+          <h2 id="heading-before-blog-cards">Your Notes</h2>
+          <!-- <img src="./img/dotted-arrow.svg" class="dotted-arrrow" width="10vw" alt=""> -->
         </div>
-  
-        <div class="nav-right">
-          <input
-            type="text"
-            name="search-bar"
-            id=""
-            class="search-bar poppins-medium"
-            placeholder="Search Notes"
-          />
-          <button type="submit" class="search-btn">Search</button>
-  
-  
-          <!-- <form action="" class="search-form">
-            <input type="text" placeholder="Type to search" class="search-input" />
+        <div class="container">
+            <div class="card__container">
+               <article class="card__article">
+                  <img src="./img/landscape-1.png" alt="image" class="card__img">
     
-            <div class="search-button">
-              <i class="fa-solid fa-magnifying-glass search-icon"></i>
-              <i class="fa-solid fa-xmark search-close"></i>
-            </div>
-          </form> -->
+                  <div class="card__data">
+                     <span class="card__description">Vancouver Mountains, Canada</span>
+                     <h2 class="card__title">The Great Path</h2>
+                     <a href="#" class="card__button" onclick="toggleBlur()">Read More</a>
+                  </div>
+               </article>
+    
+               <article class="card__article">
+                  <img src="./img/landscape-2.png" alt="image" class="card__img">
+    
+                  <div class="card__data">
+                     <span class="card__description">Poon Hill, Nepal</span>
+                     <h2 class="card__title">Starry Night</h2>
+                     <a href="#" class="card__button" onclick="toggleBlur()">Read More</a>
+                  </div>
+               </article>
+    
+               <article class="card__article">
+                  <img src="./img/landscape-3.png" alt="image" class="card__img">
+    
+                  <div class="card__data">
+                     <span class="card__description">Bojcin Forest, Serbia</span>
+                     <h2 class="card__title">Path Of Peace</h2>
+                     <a href="#" class="card__button" onclick="toggleBlur()">Read More</a>
+                  </div>
+               </article>
   
-  
-        </div>
-      </nav>
-      <!-- <img class="banner" src="./img/banner.jpg" alt=""> -->
-  
-      <!-- <div class="blog-list">
-        <h2>Latest Blogs</h2>
-        <ul>
-          <li>
-            <div class="blog">
-              <p class="blog-header">
-                <a href="blog1.html">Blog Title 1</a>
-              </p>
-              <p class="blog-content">Short description of blog content
-              </p>
+    
             </div>
-          </li>
-          <li>
-            <div class="blog">
-              <p class="blog-header">
-                <a href="blog2.html">Blog Title 2</a>
-              </p>
-              <p class="blog-content">Short description of the blog content...</p>
-            </div>
-          </li>
-          <li>
-            <div class="blog">
-              <p class="blog-header">
-                <a href="blog3.html">Blog Title 3</a>
-              </p>
-              <p class="blog-content">Short description of the blog content...</p>
-            </div>
-          </li>
-      </ul>
-      </div>  -->
-      <div class="heading-and-arrow">
-        <h2 id="heading-before-blog-cards">Latest Notes</h2>
-        <!-- <img src="./img/dotted-arrow.svg" class="dotted-arrrow" width="10vw" alt=""> -->
+         </div>
       </div>
-      <div class="container">
-          <div class="card__container">
-             <article class="card__article">
-                <img src="./img/landscape-1.png" alt="image" class="card__img">
-  
-                <div class="card__data">
-                   <span class="card__description">Vancouver Mountains, Canada</span>
-                   <h2 class="card__title">The Great Path</h2>
-                   <a href="#" class="card__button" onclick="toggleBlur()">Read More</a>
-                </div>
-             </article>
-  
-             <article class="card__article">
-                <img src="./img/landscape-2.png" alt="image" class="card__img">
-  
-                <div class="card__data">
-                   <span class="card__description">Poon Hill, Nepal</span>
-                   <h2 class="card__title">Starry Night</h2>
-                   <a href="#" class="card__button" onclick="toggleBlur()">Read More</a>
-                </div>
-             </article>
-  
-             <article class="card__article">
-                <img src="./img/landscape-3.png" alt="image" class="card__img">
-  
-                <div class="card__data">
-                   <span class="card__description">Bojcin Forest, Serbia</span>
-                   <h2 class="card__title">Path Of Peace</h2>
-                   <a href="#" class="card__button" onclick="toggleBlur()">Read More</a>
-                </div>
-             </article>
-
-  
-          </div>
-       </div>
+      
+      
     </div>
-    
-    
     <div class="modal">
       <div class="modal-content">
         <span class="close" onclick="toggleBlur()">&times;</span>
@@ -145,6 +152,7 @@
         Necessitatibus fugiat blanditiis sunt sed, nihil harum voluptas, sapiente at minus id cumque architecto, voluptatum aperiam? Dignissimos voluptates adipisci aliquid velit expedita, labore, esse dolorum pariatur fuga, aspernatur enim magnam!</p>
       </div>
     </div>
+    
 
   </body>
 </html>

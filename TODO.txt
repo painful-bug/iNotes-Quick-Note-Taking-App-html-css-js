@@ -1,0 +1,7 @@
+1. Fix card animation
+2. Center search bar placeholder text
+3. Give search icon
+4. Fix responsive issue in navbar, modal, card list
+5. Add AI integration : summarize the note and find an image from unsplash with matching vibe and description and add it as cover pic to cards
+6. Add a way to add a note to a card
+7. Finish Modal Styling

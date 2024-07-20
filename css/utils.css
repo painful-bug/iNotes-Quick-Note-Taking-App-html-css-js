@@ -3,7 +3,8 @@
 :root{
     --font : "Poppins", sans-serif;
     --main-bg-color: #383633;
-    --body-color: #e5a0a0
+    --body-color: #e5a0a0;
+    --secondary-color: #c77f7f;
 }
 
 
